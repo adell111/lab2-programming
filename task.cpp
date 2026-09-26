@@ -8,15 +8,15 @@ int main() {
     std::string text;
 
     std::cout << "Введите целое число: ";
-    std::cin >> integer;
+    std::cin >> integer; // Ввод целого числа
 
     std::cout << "Введите дробное число: ";
-    std::cin >> drob;
+    std::cin >> drob; // Ввод дробного числа
 
-    std::cin.ignore();
+    std::cin.ignore(); // Очистка буфера
 
     std::cout << "Введите строку: ";
-    std::getline(std::cin, text);
+    std::getline(std::cin, text); //Ввод строки через getline
 
     std::cout << "Значение: " << integer << ", тип: "
         << typeid(integer).name() << std::endl;
